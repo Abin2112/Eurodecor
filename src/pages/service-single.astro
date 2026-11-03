@@ -1,0 +1,9 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Content from '../components/intrio/ServiceSingleContent.astro';
+import collections from '../data/collections.js';
+// The legacy URL has no slug; select its intended collection explicitly.
+const collection = collections.find(item => item.slug === 'laminates');
+if (!collection) throw new Error('The legacy service page requires the laminates collection.');
+---
+<Layout headerVariant="about"><Content collection={collection} /></Layout>

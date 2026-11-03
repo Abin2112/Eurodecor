@@ -1,0 +1,101 @@
+---
+import projects from "../../data/project.js";
+---
+
+
+<section>
+    <div class="container">
+
+        <div class="row mb-3 g-4 align-items-center justify-content-between">
+
+            <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                <div class="subtitle">Projects</div>
+                <h2 class="mb-2 wow fadeInRight">
+                    Thoughtfully Designed Spaces That Inspire
+                </h2>
+            </div>
+
+            <div class="col-lg-4">
+                <p>
+                    Explore a selection of projects showcasing how Euro Decor’s
+                    premium surface collections come together with thoughtful
+                    design to create beautiful interiors, each reflecting a
+                    unique style, attention to detail and a lasting impression.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="relative">
+                    <div class="de-custom-nav d-flex flex-end"
+                        data-target="#projects-carousel">
+                        <div class="d-prev circle"></div>
+                        <div class="d-next circle"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="owl-carousel owl-theme owl-2-cols"
+                    id="projects-carousel">
+
+                    {projects.map((project, index) => (
+                        <div class="item" key={project.slug}>
+                            <div class="hover">
+                                <div class="relative overflow-hidden">
+
+                                    <a
+                                        class="d-block hover relative text-light"
+                                        href={`/project-single.html?project=${project.slug}`}
+                                    >
+
+                                        <img
+                                            alt=""
+                                            class="abs w-80px p-20 z-2 top-0 end-0 p-4 hover-op-1"
+                                            src="/images/misc/up-right-arrow.webp"
+                                        />
+
+                                        <div class="abs w-50 z-4 p-4 mb-0">
+                                            <h2 class="fs-36">
+                                                {project.title}
+                                            </h2>
+                                        </div>
+
+                                        <div
+                                            class="relative overflow-hidden rounded-1 wow scaleIn"
+                                            data-wow-duration="1.5s"
+                                        >
+                                            <img
+                                                alt={project.title}
+                                                class="w-100 hover-scale-1-2"
+                                                src={project.banner}
+                                            />
+                                        </div>
+
+                                        <div class="gradient-edge-top op-5 h-70"></div>
+
+                                        <div class="extra-text abs lh-1 m-4 bottom-0 z-4 d-flex">
+                                            {project.tags.map((tag) => (
+                                                <div class="bg-blur p-2 me-2">
+                                                    {tag}
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

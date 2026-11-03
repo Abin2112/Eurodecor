@@ -1,0 +1,11 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Content from '../../components/intrio/ServiceSingleContent.astro';
+import collections from '../../data/collections.js';
+export function getStaticPaths() {
+  return collections.map(collection => ({params: {slug: collection.slug}}));
+}
+const collection = collections.find(item => item.slug === Astro.params.slug);
+if (!collection) return Astro.redirect('/404.html');
+---
+<Layout headerVariant="about"><Content collection={collection} /></Layout>

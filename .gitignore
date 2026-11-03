@@ -22,3 +22,13 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Additional local and sensitive files
+.env.*
+.netlify/
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+Thumbs.db

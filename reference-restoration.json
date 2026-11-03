@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "about.html",
+    "blog-single.html",
+    "blog.html",
+    "consultation.html",
+    "contact.html",
+    "faq.html",
+    "index-2.html",
+    "index-3.html",
+    "index-4.html",
+    "index-5.html",
+    "index-6.html",
+    "index.html",
+    "project-single.html",
+    "projects-style-2.html",
+    "projects.html",
+    "service-single.html",
+    "services-style-2.html",
+    "services-style-3.html",
+    "services.html",
+    "testimonials.html"
+  ],
+  "assets_checked": 122,
+  "errors": [
+    {
+      "url": "https://www.designesia.com/themes/intrio/index-7.html",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.designesia.com/themes/intrio/contact.js",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

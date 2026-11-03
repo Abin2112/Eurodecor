@@ -1,0 +1,384 @@
+---
+import projects from "../../data/project.js";
+---
+
+<!-- PROJECT HERO BANNER -->
+<section
+    class="section-dark text-light no-top no-bottom position-relative overflow-hidden z-4 jarallax"
+    id="section-intro"
+>
+
+    <img
+        alt=""
+        class="jarallax-img"
+        id="project-banner"
+        src={projects[0].banner}
+    />
+
+    <div class="mh-800 relative z-4">
+
+        <div class="spacer-double"></div>
+        <div class="spacer-double"></div>
+        <div class="spacer-single sm-hide"></div>
+
+        <div class="container relative z-2">
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <p>
+                        Explore a thoughtfully designed space featuring
+                        premium materials, distinctive finishes and
+                        attention to every detail.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="abs w-80 abs-center bottom-10 z-2 w-100">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-10">
+                        <h1
+                            class="fs-sm-10vw mb-0 wow fadeInLeft"
+                            id="project-title"
+                        >
+                            {projects[0].title}
+                        </h1>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="sw-overlay op-4"></div>
+
+</section>
+
+
+<!-- PROJECT DETAILS -->
+<section>
+
+    <div class="container">
+
+        <div class="row g-4 gx-5 justify-content-end">
+
+            <!-- Project Information -->
+            <div class="col-md-6">
+
+                <div class="h-100 relative">
+
+                    <div class="subtitle">Project Details</div>
+
+                    <h2
+                        class="fs-36 wow fadeInRight"
+                        data-wow-delay=".2s"
+                        id="project-description"
+                    >
+                        A thoughtfully designed space combining
+                        functionality, premium materials and timeless
+                        aesthetics to create a distinctive environment.
+                    </h2>
+
+                    <div class="abs pos-sm-relative w-100 bottom-0">
+
+                        <div class="d-flex justify-content-between border-bottom p-2">
+                            <div>Client</div>
+                            <div>Euro Decor</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between border-bottom p-2">
+                            <div>Project Type</div>
+                            <div id="project-category">
+                                Interior Design
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between border-bottom p-2">
+                            <div>Services</div>
+                            <div>Material Selection &amp; Design</div>
+                        </div>
+
+                        <div class="d-flex justify-content-between border-bottom p-2">
+                            <div>Year</div>
+                            <div>2026</div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Main Project Image -->
+            <div class="col-md-6">
+
+                <div class="relative wow zoomIn overflow-hidden rounded-1">
+
+                    <img
+                        alt="Project Main Image"
+                        class="w-100 rounded-1 wow scaleIn"
+                        id="project-main-image"
+                        src={projects[0].detailsImage}
+                    />
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="spacer-single"></div>
+
+
+        <!-- THREE PROJECT GALLERY IMAGES -->
+        <div class="row g-4" id="project-gallery">
+
+            {projects[0].gallery.map((image, index) => (
+
+                <div class="col-lg-4">
+
+                    <a
+                        class="image-popup d-block hover"
+                        href={image}
+                        id={`project-gallery-link-${index}`}
+                    >
+
+                        <div class="relative overflow-hidden rounded-1">
+
+                            <div class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white z-3">
+                                View
+                            </div>
+
+                            <div class="absolute start-0 w-100 h-100 overlay-black-5 hover-op-1 z-2"></div>
+
+                            <img
+                                alt={`Project Gallery Image ${index + 1}`}
+                                class="w-100 hover-scale-1-2"
+                                id={`project-gallery-image-${index}`}
+                                src={image}
+                            />
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            ))}
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RELATED PROJECTS -->
+<section class="bg-color-op-1">
+
+    <div class="container">
+
+        <div class="row g-4 gx-5 justify-content-between align-items-center">
+
+            <div class="col-md-6">
+
+                <div class="h-100 relative">
+
+                    <div class="subtitle">Explore More</div>
+
+                    <h2 class="wow fadeInRight" data-wow-delay=".2s">
+                        Related Projects
+                    </h2>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="relative">
+
+                    <div
+                        class="de-custom-nav d-flex flex-end"
+                        data-target="#related-projects-carousel"
+                    >
+                        <div class="d-prev circle"></div>
+                        <div class="d-next circle"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-12">
+
+                <div
+                    class="owl-carousel owl-theme owl-2-cols"
+                    id="related-projects-carousel"
+                >
+
+                    {projects.map((project) => (
+
+                        <div class="item">
+
+                            <div class="hover">
+
+                                <div class="relative overflow-hidden">
+
+                                    <a
+                                        class="d-block hover relative text-light"
+                                        href={`/project-single.html?project=${project.slug}`}
+                                    >
+
+                                        <img
+                                            alt=""
+                                            class="abs w-80px p-20 z-2 top-0 end-0 p-4 hover-op-1"
+                                            src="/images/misc/up-right-arrow.webp"
+                                        />
+
+                                        <div class="abs w-50 z-4 p-4 mb-0">
+
+                                            <h2 class="fs-36">
+                                                {project.title}
+                                            </h2>
+
+                                        </div>
+
+                                        <div
+                                            class="relative overflow-hidden rounded-1 wow scaleIn"
+                                            data-wow-duration="1.5s"
+                                        >
+
+                                            <img
+                                                alt={project.title}
+                                                class="w-100 hover-scale-1-2"
+                                                src={project.banner}
+                                            />
+
+                                        </div>
+
+                                        <div class="gradient-edge-top op-5 h-70"></div>
+
+                                        <div class="extra-text abs lh-1 m-4 bottom-0 z-4 d-flex">
+
+                                            {project.tags.map((tag) => (
+                                                <div class="bg-blur p-2 me-2">
+                                                    {tag}
+                                                </div>
+                                            ))}
+
+                                        </div>
+
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    ))}
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DYNAMIC PROJECT CONTENT -->
+<script define:vars={{ projects }}>
+
+    const params = new URLSearchParams(window.location.search);
+
+    const projectSlug = params.get("project");
+
+    const project = projects.find(
+        (item) => item.slug === projectSlug
+    );
+
+    if (project) {
+
+        // Update browser title
+        document.title = `${project.title} | Euro Decor`;
+
+        // Update project banner
+        const banner = document.getElementById("project-banner");
+
+        if (banner) {
+            banner.src = project.banner;
+            banner.alt = project.title;
+        }
+
+        // Update project heading
+        const title = document.getElementById("project-title");
+
+        if (title) {
+            title.textContent = project.title;
+        }
+
+        // Update project category
+        const category = document.getElementById("project-category");
+
+        if (category) {
+            category.textContent = project.category;
+        }
+
+        // Update project main image
+        const mainImage = document.getElementById("project-main-image");
+
+        if (mainImage) {
+            mainImage.src = project.detailsImage;
+            mainImage.alt = project.title;
+        }
+
+        // Update project gallery
+        project.gallery.forEach((image, index) => {
+
+            const galleryImage = document.getElementById(
+                `project-gallery-image-${index}`
+            );
+
+            const galleryLink = document.getElementById(
+                `project-gallery-link-${index}`
+            );
+
+            if (galleryImage) {
+                galleryImage.src = image;
+                galleryImage.alt = `${project.title} - Gallery ${index + 1}`;
+            }
+
+            if (galleryLink) {
+                galleryLink.href = image;
+            }
+
+        });
+
+    } else {
+
+        // Redirect if the project slug is invalid
+        window.location.href = "/projects.html";
+
+    }
+
+</script>

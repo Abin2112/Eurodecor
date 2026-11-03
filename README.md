@@ -1,46 +1,32 @@
-# Astro Starter Kit: Basics
+# Intrio / Eurodecor Astro
+
+Faithful recreation of the Intrio reference in the existing Astro project. Original imagery, theme styles and browser scripts are served from `public`.
+
+## Development
+
+Run commands from this folder:
 
 ```sh
-npm create astro@latest -- --template basics
+npm run dev -- --background
+npm run astro -- dev status
+npm run astro -- dev logs
+npm run astro -- dev stop
+npm run build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+The dev URL is http://localhost:4321. Production files are written to `dist` with the original flat `.html` URLs.
 
-## 🚀 Project Structure
+## Editing
 
-Inside of your Astro project, you'll see the following folders and files:
+- `src/layouts/Layout.astro`: shared document and script loading.
+- `src/components/intrio`: homepage sections, inner-page content, footer and information panel.
+- `src/components/intrio/Header.astro` and `src/data/headers.json`: original header variants.
+- `src/pages`: small Astro route wrappers.
+- `public/js/site.js` and `public/css/site-fixes.css`: integration, keyboard controls and local form handling.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+No new npm dependencies were added. `AUDIT.md` records the findings and plan; `QA.md` records verification and limitations. The Python migration helpers use the already available BeautifulSoup package and are optional; normal Astro development does not require Python.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+Contact, consultation and comment forms validate locally and explicitly state that no message has been sent. Configure a delivery backend before using these for real enquiries.
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The original downloaded source folder is unchanged.

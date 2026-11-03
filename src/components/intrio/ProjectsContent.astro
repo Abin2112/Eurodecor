@@ -1,0 +1,118 @@
+---
+import projects from "../../data/project.js";
+---
+
+<!-- Projects Banner -->
+<section class="bg-dark text-light relative jarallax">
+
+    <img
+        alt=""
+        class="jarallax-img"
+        src="/images/background/2.webp"
+    />
+
+    <div class="container relative z-2">
+
+        <div class="row gy-4 gx-5 align-items-center">
+
+            <div class="col-md-8">
+                <div class="spacer-double sm-hide"></div>
+
+                <h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">
+                    Projects
+                </h1>
+
+                <ul class="crumb wow fadeInUp">
+                    <li><a href="/index.html">Home</a></li>
+                    <li class="active">Projects</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4">
+                <p class="mb-0 wow fadeInRight" data-wow-delay=".2s">
+                    Discover our portfolio of residential and commercial
+                    projects, featuring thoughtfully selected materials,
+                    distinctive finishes and timeless design.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="gradient-edge-bottom h-50 op-6"></div>
+    <div class="sw-overlay op-5"></div>
+
+</section>
+
+
+<!-- Projects Grid -->
+<section>
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            {projects.map((project) => (
+
+                <div class="col-lg-6">
+
+                    <div class="hover">
+
+                        <div class="relative overflow-hidden">
+
+                            <a
+                                class="d-block hover relative text-light"
+                                href={`/project-single.html?project=${project.slug}`}
+                            >
+
+                                <img
+                                    alt=""
+                                    class="abs w-80px p-20 z-2 top-0 end-0 p-4 hover-op-1"
+                                    src="/images/misc/up-right-arrow.webp"
+                                />
+
+                                <div class="abs w-50 z-4 p-4 mb-0">
+                                    <h2 class="fs-36">
+                                        {project.title}
+                                    </h2>
+                                </div>
+
+                                <div
+                                    class="relative overflow-hidden rounded-1 wow scaleIn"
+                                    data-wow-duration="1.5s"
+                                >
+                                    <img
+                                        alt={project.title}
+                                        class="w-100 hover-scale-1-2"
+                                        src={project.banner}
+                                    />
+                                </div>
+
+                                <div class="gradient-edge-top op-5 h-70"></div>
+
+                                <div class="extra-text abs lh-1 m-4 bottom-0 z-4 d-flex">
+
+                                    {project.tags.map((tag) => (
+                                        <div class="bg-blur p-2 me-2">
+                                            {tag}
+                                        </div>
+                                    ))}
+
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            ))}
+
+        </div>
+
+    </div>
+
+</section>

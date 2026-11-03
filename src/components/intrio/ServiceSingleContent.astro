@@ -1,0 +1,205 @@
+---
+import collections from '../../data/collections.js';
+import CollectionRange from './CollectionRange.astro';
+interface Props { collection: (typeof collections)[number] }
+const { collection } = Astro.props;
+if (!collection || !collections.some(item => item.slug === collection.slug)) {
+  throw new Error('ServiceSingleContent requires a valid collection from its route.');
+}
+---
+<section class="bg-dark text-light relative jarallax">
+<img alt="" class="jarallax-img" src="/images/background/2.webp"/>
+<div class="container relative z-2">
+<div class="row gy-4 gx-5 align-items-center">
+<div class="col-md-8">
+<div class="spacer-double sm-hide"></div>
+<h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">{collection.title}</h1>
+<ul class="crumb wow fadeInUp">
+<li><a href="/index.html">Home</a></li>
+<li class="active">{collection.title}</li>
+</ul>
+</div>
+<div class="col-md-4">
+<p class="mb-0 wow fadeInRight" data-wow-delay=".2s">{collection.bannerDescription}</p>
+</div>
+</div>
+</div>
+<div class="gradient-edge-bottom h-50 op-6"></div>
+<div class="sw-overlay op-5"></div>
+</section>
+<CollectionRange collection={collection} />
+<section>
+<div class="container">
+<div class="row g-4 justify-content-between">
+<div class="col-lg-6">
+<div class="subtitle wow fadeInUp" data-wow-delay=".2s">What We Do</div>
+<h2 class="wow fadeInUp" data-wow-delay=".4s">{collection.whatHeading}</h2>
+<p class="wow fadeInUp" data-wow-delay=".6s">{collection.whatDescription}</p>
+</div>
+<div class="col-lg-5">
+<div class="bg-dark-1 text-light p-40 rounded-1 wow fadeInUp" data-wow-delay=".8s">
+<h3>Service Highlights</h3>
+<ul class="ul-check">
+<li>{collection.highlights[0]}</li>
+<li>{collection.highlights[1]}</li>
+<li>{collection.highlights[2]}</li>
+<li>{collection.highlights[3]}</li>
+<li>{collection.highlights[4]}</li>
+<li>{collection.highlights[5]}</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-light">
+<div class="container">
+<div class="row g-4 justify-content-center">
+<div class="col-lg-6">
+<div class="text-center mb-5">
+<div class="subtitle wow fadeInUp" data-wow-delay=".0s">What's Included</div>
+<h2 class="wow fadeInUp" data-wow-delay=".2s">{`Explore the Possibilities of ${collection.title}`}</h2>
+</div>
+</div>
+</div>
+<div class="row g-4">
+<div class="col-md-4 wow fadeInUp" data-wow-delay=".0s">
+<div class="bg-color-op-1 rounded-1 p-40 h-100 relative overflow-hidden">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="w-70px h-70px rounded-1 bg-dark text-light fs-32 text-center pt-3">
+<i class="fa-solid fa-couch"></i>
+</div>
+<span class="fs-14 text-dark fw-600">01</span>
+</div>
+<h3 class="fs-24">{collection.included[0].title}</h3>
+<p class="mb-0">{collection.included[0].description}</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-delay=".2s">
+<div class="bg-color-op-1 rounded-1 p-40 h-100 relative overflow-hidden">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="w-70px h-70px rounded-1 bg-dark text-light fs-32 text-center pt-3">
+<i class="fa-solid fa-palette"></i>
+</div>
+<span class="fs-14 text-dark fw-600">02</span>
+</div>
+<h3 class="fs-24">{collection.included[1].title}</h3>
+<p class="mb-0">{collection.included[1].description}</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-delay=".4s">
+<div class="bg-color-op-1 rounded-1 p-40 h-100 relative overflow-hidden">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="w-70px h-70px rounded-1 bg-dark text-light fs-32 text-center pt-3">
+<i class="fa-solid fa-lightbulb"></i>
+</div>
+<span class="fs-14 text-dark fw-600">03</span>
+</div>
+<h3 class="fs-24">{collection.included[2].title}</h3>
+<p class="mb-0">{collection.included[2].description}</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-delay=".6s">
+<div class="bg-color-op-1 rounded-1 p-40 h-100 relative overflow-hidden">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="w-70px h-70px rounded-1 bg-dark text-light fs-32 text-center pt-3">
+<i class="fa-solid fa-ruler-combined"></i>
+</div>
+<span class="fs-14 text-dark fw-600">04</span>
+</div>
+<h3 class="fs-24">{collection.included[3].title}</h3>
+<p class="mb-0">{collection.included[3].description}</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-delay=".8s">
+<div class="bg-color-op-1 rounded-1 p-40 h-100 relative overflow-hidden">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="w-70px h-70px rounded-1 bg-dark text-light fs-32 text-center pt-3">
+<i class="fa-solid fa-store"></i>
+</div>
+<span class="fs-14 text-dark fw-600">05</span>
+</div>
+<h3 class="fs-24">{collection.included[4].title}</h3>
+<p class="mb-0">{collection.included[4].description}</p>
+</div>
+</div>
+<div class="col-md-4 wow fadeInUp" data-wow-delay="1s">
+<div class="bg-color-op-1 rounded-1 p-40 h-100 relative overflow-hidden">
+<div class="d-flex justify-content-between align-items-center mb-4">
+<div class="w-70px h-70px rounded-1 bg-dark text-light fs-32 text-center pt-3">
+<i class="fa-solid fa-star"></i>
+</div>
+<span class="fs-14 text-dark fw-600">06</span>
+</div>
+<h3 class="fs-24">{collection.included[5].title}</h3>
+<p class="mb-0">{collection.included[5].description}</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-dark-1 text-light">
+<div class="container">
+<div class="row g-4">
+<div class="col-lg-6 offset-lg-3 text-center">
+<div class="text-center">
+<div class="subtitle wow fadeInUp" data-wow-delay=".0s">Our Process</div>
+<h2 class="wow fadeInUp" data-wow-delay=".2s">{`From Inspiration to ${collection.title} Application`}</h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-6 col-md-3 de-step de-step-arrow wow fadeInRight" data-wow-delay=".4s">
+<div class="step-icon mb-3">
+<i class="fas fa-comments fs-40 id-color"></i>
+</div>
+<h2 class="hs-4">{collection.process[0].title}</h2>
+<p>{collection.process[0].description}</p>
+</div>
+<div class="col-6 col-md-3 de-step de-step-arrow wow fadeInRight" data-wow-delay=".6s">
+<div class="step-icon mb-3">
+<i class="fas fa-palette fs-40 id-color"></i>
+</div>
+<h4 class="fw-bold">{collection.process[1].title}</h4>
+<p>{collection.process[1].description}</p>
+</div>
+<div class="col-6 col-md-3 de-step de-step-arrow wow fadeInRight" data-wow-delay=".8s">
+<div class="step-icon mb-3">
+<i class="fas fa-couch fs-40 id-color"></i>
+</div>
+<h4 class="fw-bold">{collection.process[2].title}</h4>
+<p>{collection.process[2].description}</p>
+</div>
+<div class="col-6 col-md-3 de-step wow fadeInRight" data-wow-delay="1s">
+<div class="step-icon mb-3">
+<i class="fas fa-home fs-40 id-color"></i>
+</div>
+<h4 class="fw-bold">{collection.process[3].title}</h4>
+<p>{collection.process[3].description}</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="row g-4 gx-5 align-items-center">
+<div class="col-lg-6">
+<img alt={collection.title} class="img-fluid rounded-1 wow fadeInUp collection-why-image" data-wow-delay=".0s" src={collection.image}/>
+</div>
+<div class="col-lg-6">
+<div class="subtitle wow fadeInUp" data-wow-delay=".2s">Why Choose Us</div>
+<h2 class="wow fadeInUp" data-wow-delay=".4s">{collection.whyHeading}</h2>
+<ul class="ul-check wow fadeInUp" data-wow-delay=".6s">
+<li>{collection.why[0]}</li>
+<li>{collection.why[1]}</li>
+<li>{collection.why[2]}</li>
+<li>{collection.why[3]}</li>
+<li>{collection.why[4]}</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<style>
+.collection-why-image { width: 100%; aspect-ratio: 2000 / 1271; object-fit: cover; }
+</style>

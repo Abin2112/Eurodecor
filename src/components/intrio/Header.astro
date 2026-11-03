@@ -1,0 +1,130 @@
+---
+interface Props {
+  variant?: string;
+}
+---
+
+<header class="transparent">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="de-flex sm-pt10">
+          <!-- Logo -->
+          <div class="de-flex-col">
+            <div id="logo">
+              <a href="/index.html">
+                <img
+                  class="logo-main"
+                  src="/images/logo-white.webp"
+                  alt="Eurodecor"
+                />
+                <img
+                  class="logo-scroll"
+                  src="/images/logo-white.webp"
+                  alt="Eurodecor"
+                />
+                <img
+                  class="logo-mobile"
+                  src="/images/logo-white.webp"
+                  alt="Eurodecor"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- Navigation -->
+          <div class="de-flex-col header-col-mid">
+            <ul id="mainmenu">
+              <li>
+                <a class="menu-item" href="/index.html">Home</a>
+              </li>
+
+              <li>
+                <a class="menu-item" href="/about.html">About Us</a>
+              </li>
+
+              <li>
+                <a class="menu-item" href="/services.html">Products</a>
+              </li>
+
+              <li>
+                <a class="menu-item" href="/projects.html">Projects</a>
+              </li>
+
+              <li>
+                <a class="menu-item" href="#">Catalogue</a>
+
+                <ul>
+                  <li>
+                    <a href="/catalogues/euro-mica.pdf" download>
+                      Euro Mica
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalogues/euro-veneer-2026.pdf" download>
+                      Euro Veneer 2026
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalogues/ess.pdf" download>ESS</a>
+                  </li>
+                  <li>
+                    <a href="/catalogues/euro-diet.pdf" download>
+                      Euro Diet
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalogues/nexo-2026.pdf" download>
+                      Nexo 2026
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalogues/pro-plus-2026.pdf" download>
+                      Pro Plus 2026
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/catalogues/zero-by-euro.pdf" download>
+                      Zero By Euro
+                    </a>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a class="menu-item" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Right-side controls -->
+          <div class="de-flex-col">
+            <div class="menu_side_area">
+              <!-- Mobile navigation toggle -->
+              <span
+                id="menu-btn"
+                role="button"
+                tabindex="0"
+                aria-label="Toggle navigation"
+                aria-controls="mainmenu"
+                aria-expanded="false"
+              ></span>
+            </div>
+
+            <!-- Original desktop hamburger / information panel -->
+            <div
+              id="btn-extra"
+              role="button"
+              tabindex="0"
+              aria-label="Open information panel"
+              aria-controls="extra-wrap"
+            >
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
