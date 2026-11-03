@@ -2,7 +2,7 @@
 const projects = [
   {
     slug: "design-workz-1",
-    title: "Design Workz 1",
+    title: "Design Workz",
     category: "Commercial Space",
     tags: ["Interior Design", "Premium Surfaces", "Contemporary"],
 

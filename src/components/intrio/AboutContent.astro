@@ -1,226 +1,443 @@
+---
+const testimonials = [
+  {
+    quote:
+      "Their campaign made our brand shine online. Outstanding creativity and flawless execution.",
+    author: "Anna L., Paris",
+  },
+  {
+    quote:
+      "Our traffic grew beyond expectations. A truly data-driven and impactful partnership.",
+    author: "Michael H., Toronto",
+  },
+  {
+    quote:
+      "The attention to our goals was amazing. Every ad reflected our brand perfectly.",
+    author: "Nadia R., Dubai",
+  },
+  {
+    quote:
+      "Working with them was effortless and inspiring. The best digital agency experience.",
+    author: "Tom S., Los Angeles",
+  },
+  {
+    quote:
+      "From SEO to ads, everything delivered results. A partner we truly trust.",
+    author: "Elise K., Amsterdam",
+  },
+  {
+    quote:
+      "Professional, creative, and results-driven. Our leads doubled in just two months.",
+    author: "David M., Singapore",
+  },
+];
 
+const team = [
+  {
+    name: "Anna Charline",
+    role: "Web Developer",
+    image: "/images/team/2.webp",
+  },
+  {
+    name: "John Smith",
+    role: "Web Developer",
+    image: "/images/team/3.webp",
+  },
+];
+---
 
-
-
-
+<!-- About banner -->
 <section class="bg-dark text-light relative jarallax">
-<img alt="" class="jarallax-img" src="/images/background/2.webp"/>
-<div class="container relative z-2">
-<div class="row gy-4 gx-5 align-items-center">
-<div class="col-md-8">
-<div class="spacer-double sm-hide"></div>
-<h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">About Us</h1>
-<ul class="crumb wow fadeInUp">
-<li><a href="/index.html">Home</a></li>
-<li class="active">About Us</li>
-</ul>
-</div>
-<div class="col-md-4">
-<p class="mb-0 wow fadeInRight" data-wow-delay=".2s">
-                                We create inspiring interiors that combine comfort, functionality, and timeless design. Every space is thoughtfully tailored to reflect your lifestyle and needs.
-                            </p>
-</div>
-</div>
-</div>
-<div class="gradient-edge-bottom h-50 op-6"></div>
-<div class="sw-overlay op-5"></div>
+  <img
+    alt=""
+    class="jarallax-img"
+    src="/images/background/2.webp"
+  />
+
+  <div class="container relative z-2">
+    <div class="row gy-4 gx-5 align-items-center">
+      <div class="col-md-8">
+        <div class="spacer-double sm-hide"></div>
+
+        <h1 class="mb-3 wow fadeInUp" data-wow-delay=".2s">
+          About Us
+        </h1>
+
+        <ul class="crumb wow fadeInUp">
+          <li><a href="/index.html">Home</a></li>
+          <li class="active">About Us</li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <p class="mb-0 wow fadeInRight" data-wow-delay=".2s">
+          At Euro Decor, every surface is created with the intent to elevate
+          interiors beyond the ordinary. With over 29 years of expertise, we
+          bring together refined craftsmanship, premium materials, and
+          trendsetting designs for architects, interior designers, and
+          homeowners who value quality in every detail. From decorative veneers
+          to laminates, our collections add sophistication, strength, and
+          character to spaces that are built to stand apart.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="gradient-edge-bottom h-50 op-6"></div>
+  <div class="sw-overlay op-5"></div>
 </section>
+
+<!-- About introduction -->
 <section>
-<div class="container">
-<div class="row g-4 gx-5 justify-content-end align-items-center">
-<div class="col-md-6">
-<div class="relative wow zoomIn overflow-hidden rounded-1">
-<img alt="" class="w-100 rounded-1 wow scaleIn" src="/images/misc/s1.webp"/>
-</div>
-</div>
-<div class="col-md-6">
-<div class="subtitle">About Us</div>
-<h2 class="wow fadeInRight" data-wow-delay=".2s">We’re committed to turning your vision into reality</h2>
-<p class="wow fadeInRight" data-wow-delay=".4s">We create spaces that go beyond being visually stunning, they are thoughtfully designed to be highly functional, deeply personal, and a true reflection of who you are. Every project we undertake is approached with a careful balance of creativity and practicality, ensuring that each element not only looks beautiful but also serves a meaningful purpose in your daily life.</p>
-<div class="text-end wow fadeInRight" data-wow-delay=".6s">
-<img alt="" class="w-150px" src="/images/misc/signature.webp"/>
-<h3 class="hs-5">John Smith</h3>
-</div>
-</div>
-</div>
-<div class="spacer-double"></div>
-<div class="row g-4">
-<div class="col-md-3 col-sm-6">
-<div class="de_count wow fadeInRight" data-wow-delay=".0s">
-<h3 class="fs-40 mb-0"><span class="timer" data-speed="3000" data-to="65250">0</span>+</h3>
-                                Design Hours Completed
-                            </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="de_count wow fadeInRight" data-wow-delay=".2s">
-<h3 class="fs-40 mb-0"><span class="timer" data-speed="3000" data-to="23160">0</span>+</h3>
-                                Satisfied Clients
-                            </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="de_count wow fadeInRight" data-wow-delay=".4s">
-<h3 class="fs-40 mb-0"><span class="timer" data-speed="3000" data-to="150">0</span>+</h3>
-                                Awards Winning
-                            </div>
-</div>
-<div class="col-md-3 col-sm-6">
-<div class="de_count wow fadeInRight" data-wow-delay=".6s">
-<h3 class="fs-40 mb-0"><span class="timer" data-speed="3000" data-to="20">0</span>+</h3>
-                                Years of Design Experience
-                            </div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row g-4 gx-5 justify-content-end align-items-center">
+      <div class="col-md-6">
+        <div class="relative wow zoomIn overflow-hidden rounded-1">
+          <img
+            alt=""
+            class="w-100 rounded-1 wow scaleIn"
+            src="/images/misc/s1.webp"
+          />
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="subtitle">About Us</div>
+
+        <h2 class="wow fadeInRight" data-wow-delay=".2s">
+          We’re committed to turning your vision into reality
+        </h2>
+
+        <p class="wow fadeInRight" data-wow-delay=".4s">
+          At Euro Decor, every surface is designed to make interiors feel more
+          refined, warm, and complete. Our veneers and laminates add natural
+          beauty, texture, and sophistication to every project. Backed by over
+          29 years of expertise, we craft collections that help transform spaces
+          into elegant design experiences.
+        </p>
+
+        <div class="text-end wow fadeInRight" data-wow-delay=".6s">
+          <img
+            alt=""
+            class="w-150px"
+            src="/images/misc/signature.webp"
+          />
+          <h3 class="hs-5">Euro Decor</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer-double"></div>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-sm-6">
+        <div class="de_count wow fadeInRight" data-wow-delay=".0s">
+          <h3 class="fs-40 mb-0">
+            <span class="timer" data-speed="3000" data-to="29">0</span>+
+          </h3>
+          Years of Industry Experience
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="de_count wow fadeInRight" data-wow-delay=".2s">
+          <h3 class="fs-40 mb-0">
+            <span class="timer" data-speed="3000" data-to="1000">0</span>+
+          </h3>
+          Dealers Across India
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="de_count wow fadeInRight" data-wow-delay=".4s">
+          <h3 class="fs-40 mb-0">
+            <span class="timer" data-speed="3000" data-to="250000">0</span>
+            <small style="font-size: 18px; font-weight: 400;">sq.ft.</small>
+          </h3>
+          Manufacturing Facility
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6">
+        <div class="de_count wow fadeInRight" data-wow-delay=".6s">
+          <h3 class="fs-40 mb-0">
+            <span class="timer" data-speed="3000" data-to="2400000">0</span>
+          </h3>
+          Laminate Sheets Annual Capacity
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- Mission and Vision -->
+<section class="mission-vision-section">
+  <div class="container">
+    <div class="mission-vision-grid">
+      <article
+        class="purpose-panel wow fadeInUp"
+        data-wow-delay=".1s"
+        aria-labelledby="mission-title"
+      >
+        <h2 id="mission-title" class="purpose-title">
+          Our Mission
+        </h2>
+
+        <div class="purpose-copy">
+          <p>
+            At Euro Decor, our mission is to craft surfaces that elevate the way
+            interiors are designed, experienced, and remembered. Through premium
+            veneers, laminates, and decorative finishes, we bring together
+            beauty, durability, and innovation for spaces that deserve
+            distinction.
+          </p>
+
+          <p>
+            Guided by craftsmanship and a commitment to quality, we continue to
+            support architects, designers, and homeowners with surface solutions
+            that transform every vision into a refined reality.
+          </p>
+        </div>
+      </article>
+
+      <article
+        class="purpose-panel wow fadeInUp"
+        data-wow-delay=".3s"
+        aria-labelledby="vision-title"
+      >
+        <h2 id="vision-title" class="purpose-title">
+          Our Vision
+        </h2>
+
+        <div class="purpose-copy">
+          <p>
+            Our vision is to make Euro Decor a trusted name for premium
+            decorative surfaces across India and beyond. We aim to create
+            veneers, laminates, and bespoke surface solutions that bring
+            together timeless design, superior quality, and refined
+            craftsmanship.
+          </p>
+
+          <p>
+            With a strong focus on innovation, customization, and design
+            excellence, we strive to support architects, interior designers, and
+            homeowners in creating spaces that feel elegant, functional, and
+            truly distinctive. Our goal is to keep evolving with modern
+            interiors while staying rooted in the beauty, warmth, and character
+            of fine surfaces.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
 <section class="text-light jarallax">
-<img alt="" class="jarallax-img" src="/images/background/1.webp"/>
-<div class="sw-overlay op-6"></div>
-<div class="container relative z-2">
-<div class="row g-4 justify-content-center">
-<div class="col-md-4">
-<div class="subtitle">
-                                Testimonials
-                            </div>
-</div>
-<div class="col-md-7">
-<div class="owl-single-dots owl-carousel owl-theme">
-<div class="item">
-<span class="d-stars d-block mb-3">
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-</span>
-<h2 class="mb-4 wow fadeInUp">Their campaign made our brand shine online. Outstanding creativity and flawless execution.</h2>
-<span class="wow fadeInUp">Anna L., Paris</span>
-</div>
-<div class="item">
-<span class="d-stars d-block mb-3">
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-</span>
-<h2 class="mb-4 wow fadeInUp">Our traffic grew beyond expectations. A truly data-driven and impactful partnership.</h2>
-<span class="wow fadeInUp">Michael H., Toronto</span>
-</div>
-<div class="item">
-<span class="d-stars d-block mb-3">
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-</span>
-<h2 class="mb-4 wow fadeInUp">The attention to our goals was amazing. Every ad reflected our brand perfectly.</h2>
-<span class="wow fadeInUp">Nadia R., Dubai</span>
-</div>
-<div class="item">
-<span class="d-stars d-block mb-3">
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-</span>
-<h2 class="mb-4 wow fadeInUp">Working with them was effortless and inspiring. The best digital agency experience.</h2>
-<span class="wow fadeInUp">Tom S., Los Angeles</span>
-</div>
-<div class="item">
-<span class="d-stars d-block mb-3">
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-</span>
-<h2 class="mb-4 wow fadeInUp">From SEO to ads, everything delivered results. A partner we truly trust.</h2>
-<span class="wow fadeInUp">Elise K., Amsterdam</span>
-</div>
-<div class="item">
-<span class="d-stars d-block mb-3">
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-<i class="icofont-star"></i>
-</span>
-<h2 class="mb-4 wow fadeInUp">Professional, creative, and results-driven. Our leads doubled in just two months.</h2>
-<span class="wow fadeInUp">David M., Singapore</span>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <img
+    alt=""
+    class="jarallax-img"
+    src="/images/background/1.webp"
+  />
+
+  <div class="sw-overlay op-6"></div>
+
+  <div class="container relative z-2">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4">
+        <div class="subtitle">Testimonials</div>
+      </div>
+
+      <div class="col-md-7">
+        <div class="owl-single-dots owl-carousel owl-theme">
+          {
+            testimonials.map((testimonial) => (
+              <div class="item">
+                <span class="d-stars d-block mb-3">
+                  <i class="icofont-star"></i>
+                  <i class="icofont-star"></i>
+                  <i class="icofont-star"></i>
+                  <i class="icofont-star"></i>
+                  <i class="icofont-star"></i>
+                </span>
+
+                <h2 class="mb-4 wow fadeInUp">
+                  {testimonial.quote}
+                </h2>
+
+                <span class="wow fadeInUp">
+                  {testimonial.author}
+                </span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- Team -->
 <section>
-<div class="container">
-<div class="row mb-3 g-4 gx-5 align-items-center justify-content-between">
-<div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
-<div class="subtitle">Our Team</div>
-<h2 class="wow fadeInRight">Meet the Experts Behind Our Work</h2>
-</div>
-<div class="col-lg-4">
-<p>Our team of passionate professionals delivers exceptional results. With diverse expertise and a shared vision, we bring innovative ideas to life and exceed expectations.</p>
-</div>
-<div class="col-lg-4">
-<div class="relative">
-<div class="de-custom-nav d-flex flex-end" data-target="#team-carousel">
-<div class="d-prev circle"></div>
-<div class="d-next circle"></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="container">
-<div class="row g-4">
-<div class="col-lg-12">
-<div class="owl-2-cols owl-carousel owl-theme wow fadeIn" data-wow-delay=".2s" id="team-carousel">
-<div class="item">
-<div class="bg-light rounded-1 overflow-hidden">
-<div class="row g-0 align-items-center">
-<div class="col-sm-6">
-<img alt="" class="w-100" src="/images/team/2.webp"/>
-</div>
-<div class="col-sm-6">
-<div class="p-3 text-center">
-<h3 class="mb-0">Anna Charline</h3>
-<p class="mb-2">Web Developer</p>
-<div class="social-icons">
-<a href="#"><i class="bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a>
-<a href="#"><i class="bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></a>
-<a href="#"><i class="bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="item">
-<div class="bg-light rounded-1 overflow-hidden">
-<div class="row g-0 align-items-center">
-<div class="col-sm-6">
-<img alt="" class="w-100" src="/images/team/3.webp"/>
-</div>
-<div class="col-sm-6">
-<div class="p-3 text-center">
-<h3 class="mb-0">John Smith</h3>
-<p class="mb-2">Web Developer</p>
-<div class="social-icons">
-<a href="#"><i class="bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a>
-<a href="#"><i class="bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></a>
-<a href="#"><i class="bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="row mb-3 g-4 gx-5 align-items-center justify-content-between">
+      <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+        <div class="subtitle">Our Team</div>
+        <h2 class="wow fadeInRight">
+          Meet the Experts Behind Our Work
+        </h2>
+      </div>
+
+      <div class="col-lg-4">
+        <p>
+          Our team of passionate professionals delivers exceptional results.
+          With diverse expertise and a shared vision, we bring innovative ideas
+          to life and exceed expectations.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="relative">
+          <div
+            class="de-custom-nav d-flex flex-end"
+            data-target="#team-carousel"
+          >
+            <div class="d-prev circle"></div>
+            <div class="d-next circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-12">
+        <div
+          class="owl-2-cols owl-carousel owl-theme wow fadeIn"
+          data-wow-delay=".2s"
+          id="team-carousel"
+        >
+          {
+            team.map((member) => (
+              <div class="item">
+                <div class="bg-light rounded-1 overflow-hidden">
+                  <div class="row g-0 align-items-center">
+                    <div class="col-sm-6">
+                      <img
+                        alt=""
+                        class="w-100"
+                        src={member.image}
+                      />
+                    </div>
+
+                    <div class="col-sm-6">
+                      <div class="p-3 text-center">
+                        <h3 class="mb-0">{member.name}</h3>
+                        <p class="mb-2">{member.role}</p>
+
+                        <div class="social-icons">
+                          <a href="#">
+                            <i class="bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i>
+                          </a>
+                          <a href="#">
+                            <i class="bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i>
+                          </a>
+                          <a href="#">
+                            <i class="bg-hover-2 text-hover-white fa-brands fa-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<style>
+  /* Scoped styling for Mission and Vision only */
+  .mission-vision-section {
+    position: relative;
+    background: #f5f1eb;
+    padding-block: clamp(64px, 7vw, 112px);
+  }
+
+  .mission-vision-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: clamp(48px, 6vw, 100px);
+  }
+
+  .purpose-panel {
+    position: relative;
+    min-width: 0;
+    padding-top: 38px;
+    border-top: 1px solid rgba(105, 72, 48, 0.24);
+  }
+
+  .purpose-panel::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 72px;
+    height: 2px;
+    background: #a67c52;
+  }
+
+  .purpose-title {
+    color: #341f16;
+    font-size: clamp(34px, 3.6vw, 54px);
+    font-weight: var(--heading-font-weight, 400);
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+    margin: 0 0 32px;
+  }
+
+  .purpose-copy {
+    max-width: 58ch;
+  }
+
+  .purpose-copy p {
+    color: rgba(52, 31, 22, 0.78);
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0 0 24px;
+  }
+
+  .purpose-copy p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 991px) {
+    .mission-vision-grid {
+      grid-template-columns: 1fr;
+      gap: 52px;
+    }
+
+    .purpose-copy {
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .purpose-panel {
+      padding-top: 28px;
+    }
+
+    .purpose-title {
+      margin-bottom: 24px;
+    }
+
+    .purpose-copy p {
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+  }
+</style>
