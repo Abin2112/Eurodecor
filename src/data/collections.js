@@ -106,22 +106,22 @@ const details = {
     "intro": "Discover the individuality of natural wood through expressive grains, warm tones and carefully considered surface finishes.",
     "products": [
       {
-        "name": "NATURAL GRAIN",
+        "name": null,
         "description": "Celebrate the individual grain and colour variations of natural wood veneers.",
         "image": null
       },
       {
-        "name": "STRAIGHT GRAIN",
+        "name": null,
         "description": "Create a calm, ordered surface with linear grain arrangements.",
         "image": null
       },
       {
-        "name": "FIGURED WOOD",
+        "name": null,
         "description": "Introduce expressive grain movement for feature panels and furniture.",
         "image": null
       },
       {
-        "name": "MATCHED PANELS",
+        "name": null,
         "description": "Explore coordinated veneer arrangements for continuous visual rhythm.",
         "image": null
       }

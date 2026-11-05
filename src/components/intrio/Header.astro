@@ -1,3 +1,4 @@
+
 ---
 interface Props {
   variant?: string;
@@ -56,36 +57,51 @@ interface Props {
 
                 <ul>
                   <li>
-                    <a href="/catalogues/euro-mica.pdf" download>
+                    <a href="public/catalouges/EURO Mica Interactive.pdf" download>
                       Euro Mica
+                      <i class="fa-solid fa-download catalogue-download"></i>
                     </a>
                   </li>
+
                   <li>
-                    <a href="/catalogues/euro-veneer-2026.pdf" download>
+                    <a href="public/catalouges/EURO Veneer Folder 2026 Interactive.pdf" download>
                       Euro Veneer 2026
+                      <i class="fa-solid fa-download catalogue-download"></i>
                     </a>
                   </li>
+
                   <li>
-                    <a href="/catalogues/ess.pdf" download>ESS</a>
+                    <a href="public/catalouges/ESS Folder 2026 Interactive PDF.pdf" download>
+                      ESS
+                      <i class="fa-solid fa-download catalogue-download"></i>
+                    </a>
                   </li>
+
                   <li>
-                    <a href="/catalogues/euro-diet.pdf" download>
+                    <a href="public/catalouges/EURO Diet Folder.pdf" download>
                       Euro Diet
+                      <i class="fa-solid fa-download catalogue-download"></i>
                     </a>
                   </li>
+
                   <li>
-                    <a href="/catalogues/nexo-2026.pdf" download>
+                    <a href="public/catalouges/Nexo Folder 2026.pdf" download>
                       Nexo 2026
+                      <i class="fa-solid fa-download catalogue-download"></i>
                     </a>
                   </li>
+
                   <li>
-                    <a href="/catalogues/pro-plus-2026.pdf" download>
+                    <a href="public/catalouges/Pro Plus 2026 Interactive.pdf" download>
                       Pro Plus 2026
+                      <i class="fa-solid fa-download catalogue-download"></i>
                     </a>
                   </li>
+
                   <li>
-                    <a href="/catalogues/zero-by-euro.pdf" download>
+                    <a href="public/catalouges/Zero by EURO Interactive.pdf" download>
                       Zero By Euro
+                      <i class="fa-solid fa-download catalogue-download"></i>
                     </a>
                   </li>
                 </ul>
@@ -128,3 +144,27 @@ interface Props {
     </div>
   </div>
 </header>
+
+<style>
+  
+#mainmenu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.catalogue-download {
+    font-size: 13px;
+    margin-left: auto;
+    padding-left: 25px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+#mainmenu ul li a:hover .catalogue-download {
+    opacity: 1;
+    transform: translateY(2px);
+}
+
+</style>
