@@ -40,21 +40,22 @@
             </div>
 
             <!-- COLUMN 2: E-CATALOGUE -->
-            <div class="col-md-4 footer-column">
+            <!-- COLUMN 2: E-CATALOGUE -->
+<div class="col-md-4 footer-column">
 
-                <h2>E-Catalogue</h2>
+    <h2>E-Catalogue</h2>
 
-                <ul class="catalogue-list">
-                    <li><a href="public/catalouges/EURO Mica Interactive.pdf"><span>EURO Mica</span><i class="fa-solid fa-download"></i></a></li>
-                    <li><a href="public/catalouges/EURO Veneer Folder 2026 Interactive.pdf"><span>EURO Veneer</span><i class="fa-solid fa-download"></i></a></li>
-                    <li><a href="public/catalouges/ESS Folder 2026 Interactive PDF.pdf"><span>ESS Folder</span><i class="fa-solid fa-download"></i></a></li>
-                    <li><a href="public/catalouges/EURO Diet Folder.pdf"><span>EURO Diet</span><i class="fa-solid fa-download"></i></a></li>
-                    <li><a href="public/catalouges/Nexo Folder 2026.pdf"><span>Nexo</span><i class="fa-solid fa-download"></i></a></li>
-                    <li><a href="public/catalouges/Pro Plus 2026 Interactive.pdf"><span>Pro Plus</span><i class="fa-solid fa-download"></i></a></li>
-                    <li><a href="public/catalouges/Zero by EURO Interactive.pdf"><span>Zero by EURO</span><i class="fa-solid fa-download"></i></a></li>
-                </ul>
+    <ul class="catalogue-list">
+        <li><a href="/catalouges/EURO Mica Interactive.pdf">EURO Mica <i class="fa-solid fa-download"></i></a></li>
+        <li><a href="/catalouges/EURO Veneer Folder 2026 Interactive.pdf">EURO Veneer <i class="fa-solid fa-download"></i></a></li>
+        <li><a href="/catalouges/ESS Folder 2026 Interactive PDF.pdf">ESS Folder <i class="fa-solid fa-download"></i></a></li>
+        <li><a href="/catalouges/EURO Diet Folder.pdf">EURO Diet <i class="fa-solid fa-download"></i></a></li>
+        <li><a href="/catalouges/Nexo Folder 2026.pdf">Nexo <i class="fa-solid fa-download"></i></a></li>
+        <li><a href="/catalouges/Pro Plus 2026 Interactive.pdf">Pro Plus <i class="fa-solid fa-download"></i></a></li>
+        <li><a href="/catalouges/Zero by EURO Interactive.pdf">Zero by EURO <i class="fa-solid fa-download"></i></a></li>
+    </ul>
 
-            </div>
+</div>
 
             <!-- COLUMN 3: GET IN TOUCH -->
             <div class="col-md-4 footer-column footer-contact">
@@ -138,40 +139,29 @@
 
     /* CATALOGUE */
     .catalogue-list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .catalogue-list li {
-        border-bottom: 1px solid rgba(255,255,255,0.13);
-    }
+.catalogue-list li {
+    margin-bottom: 14px;
+}
 
-    .catalogue-list li:first-child {
-        border-top: 1px solid rgba(255,255,255,0.13);
-    }
+.catalogue-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    text-decoration: none;
+}
 
-    .catalogue-list li a {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 10px;
-        padding: 17px 4px;
-        color: rgba(255,255,255,0.8);
-        font-size: 14px;
-        transition: 0.3s ease;
-    }
-
-    .catalogue-list li a:hover {
-        color: #fff;
-        padding-left: 10px;
-    }
-
-    .catalogue-list i {
-        font-size: 13px;
-        opacity: 0.65;
-        flex-shrink: 0;
-    }
+.catalogue-list i {
+    font-size: 13px;
+    opacity: 0.7;
+    order: -1;
+}
 
     /* SOCIAL ICONS */
     .footer-social {

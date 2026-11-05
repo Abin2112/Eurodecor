@@ -10,32 +10,32 @@ const details = {
       {
         "name": "SYNCHRO",
         "description": "Synchro laminates seamlessly blend realistic wood-inspired patterns with coordinated textures, bringing depth and natural character to engineered surfaces.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam1.png",
       },
       {
         "name": "STRATO",
         "description": "A refined laminate range with clean, modern surface appeal. Ideal for interiors that need a sleek, sophisticated and contemporary finish.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899966/lam6.png",
       },
       {
         "name": "PASTELLO",
         "description": "Pastello laminates bring soft tones and a calm visual appeal to interiors, creating subtle, elegant and sophisticated colour palettes.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899965/lam5.png",
       },
       {
         "name": "MARBLE",
         "description": "Marble laminates capture the luxurious appearance of natural stone with the practicality of laminate. Ideal for tabletops, wall panels, counters and furniture.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam4.png",
       },
       {
         "name": "TEXTURED",
         "description": "Textured laminates add depth, character and tactile appeal to interiors. Designed for surfaces that should feel as rich as they look.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam3.png",
       },
       {
         "name": "DIET / INTERIOR LAMINATES",
         "description": "Versatile laminate collections combining design, practicality and everyday functionality for residential and commercial applications.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam2.png",
       }
     ],
     "whatHeading": "Discover the Possibilities of Decorative Laminates",
@@ -108,22 +108,32 @@ const details = {
       {
         "name": null,
         "description": "Celebrate the individual grain and colour variations of natural wood veneers.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793900290/02._Dyed_Veneer.png",
       },
       {
         "name": null,
         "description": "Create a calm, ordered surface with linear grain arrangements.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793900290/04._Metallic_Veneer.png",
       },
       {
         "name": null,
         "description": "Introduce expressive grain movement for feature panels and furniture.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793900292/03._Smoked_Veneer.png",
       },
       {
         "name": null,
         "description": "Explore coordinated veneer arrangements for continuous visual rhythm.",
-        "image": null
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793900292/01._Natural_Veneer.png",
+      },
+      {
+        "name": null,
+        "description": "Introduce expressive grain movement for feature panels and furniture.",
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793896653/06._Parquetry_Veneer.png",
+      },
+      {
+        "name": null,
+        "description": "Explore coordinated veneer arrangements for continuous visual rhythm.",
+        "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793896653/05._Marquetry_Veneer.png",
       }
     ],
     "whatHeading": "Bring Natural Wood Character to Every Surface",
