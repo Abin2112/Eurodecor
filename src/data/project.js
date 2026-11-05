@@ -10,12 +10,12 @@ const projects = [
       "https://res.cloudinary.com/g81wchrp/image/upload/v1792047513/DW4.jpg",
 
     detailsImage:
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047513/DW5.jpg",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1793871369/DW1_1.jpg",
 
     gallery: [
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047513/DW7.jpg",
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047512/DW3.jpg",
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047513/DW6.jpg"
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047512/DW2.jpg",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047513/DW5.jpg",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1792047513/DW4.jpg"
     ]
   },
 
@@ -48,12 +48,12 @@ const projects = [
       "https://res.cloudinary.com/g81wchrp/image/upload/v1792048283/OSC6.jpg",
 
     detailsImage:
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792048281/OSC2.jpg",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1793879280/OSC1_1.jpg",
 
     gallery: [
       "https://res.cloudinary.com/g81wchrp/image/upload/v1792048288/OSC4.jpg",
       "https://res.cloudinary.com/g81wchrp/image/upload/v1792048283/OSC3.jpg",
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792048288/OSC4.jpg"
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1792048281/OSC2.jpg"
     ]
   },
 
@@ -70,8 +70,8 @@ const projects = [
       "https://res.cloudinary.com/g81wchrp/image/upload/v1792048708/PO4.jpg",
 
     gallery: [
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792048708/PO4.jpg",
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1792048705/P03.jpg",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1792048707/PO1.jpg",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1793879080/PO5.jpg",
       "https://res.cloudinary.com/g81wchrp/image/upload/v1792048705/P03.jpg"
     ]
   },
@@ -109,7 +109,7 @@ const projects = [
 
     gallery: [
       "https://res.cloudinary.com/g81wchrp/image/upload/v1793701108/sb2.png",
-      "https://res.cloudinary.com/g81wchrp/image/upload/v1793701108/sb1.png",
+      "https://res.cloudinary.com/g81wchrp/image/upload/v1793879422/sb4.png",
       "https://res.cloudinary.com/g81wchrp/image/upload/v1793701108/sb3.png"
     ]
   }
