@@ -11,6 +11,7 @@ const details = {
         "name": null,
         "description": "Synchro laminates seamlessly blend realistic wood-inspired patterns with coordinated textures, bringing depth and natural character to engineered surfaces.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam1.png",
+        "bannerImage": "https://res.cloudinary.com/g81wchrp/image/upload/v1793896653/lam_banner.png",
       },
       {
         "name": null,
@@ -109,6 +110,7 @@ const details = {
         "name": null,
         "description": "Celebrate the individual grain and colour variations of natural wood veneers.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793900290/02._Dyed_Veneer.png",
+        "bannerImage": "https://res.cloudinary.com/g81wchrp/image/upload/v1793896654/0._Veneer_Banner.png",
       },
       {
         "name": null,
@@ -378,9 +380,24 @@ const details = {
 };
 
 export const collectionUrl = (slug) => `/services/${slug}.html`;
-export const collections = services.map(service => ({
-  ...service, ...details[service.slug],
-  bannerDescription: service.description,
-  products: details[service.slug].products.map(product => ({...product, image: product.image || service.image})),
-}));
+
+export const collections = services.map((service) => {
+  const detail = details[service.slug];
+
+  return {
+    ...service,
+    ...detail,
+
+    // Keep the bannerImage defined in services.js
+    bannerImage: service.bannerImage || service.image,
+
+    bannerDescription: service.description,
+
+    products: (detail?.products || []).map((product) => ({
+      ...product,
+      image: product.image || service.image,
+    })),
+  };
+});
+
 export default collections;
