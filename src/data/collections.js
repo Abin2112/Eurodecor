@@ -8,32 +8,32 @@ const details = {
     "intro": "Explore contemporary colours, tactile textures, synchronised wood designs and stone-inspired surfaces for distinctive interiors.",
     "products": [
       {
-        "name": "SYNCHRO",
+        "name": null,
         "description": "Synchro laminates seamlessly blend realistic wood-inspired patterns with coordinated textures, bringing depth and natural character to engineered surfaces.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam1.png",
       },
       {
-        "name": "STRATO",
+        "name": null,
         "description": "A refined laminate range with clean, modern surface appeal. Ideal for interiors that need a sleek, sophisticated and contemporary finish.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899966/lam6.png",
       },
       {
-        "name": "PASTELLO",
+        "name": null,
         "description": "Pastello laminates bring soft tones and a calm visual appeal to interiors, creating subtle, elegant and sophisticated colour palettes.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899965/lam5.png",
       },
       {
-        "name": "MARBLE",
+        "name": null,
         "description": "Marble laminates capture the luxurious appearance of natural stone with the practicality of laminate. Ideal for tabletops, wall panels, counters and furniture.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam4.png",
       },
       {
-        "name": "TEXTURED",
+        "name": null,
         "description": "Textured laminates add depth, character and tactile appeal to interiors. Designed for surfaces that should feel as rich as they look.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam3.png",
       },
       {
-        "name": "DIET / INTERIOR LAMINATES",
+        "name": null,
         "description": "Versatile laminate collections combining design, practicality and everyday functionality for residential and commercial applications.",
         "image": "https://res.cloudinary.com/g81wchrp/image/upload/v1793899967/lam2.png",
       }
